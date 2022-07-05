@@ -1,15 +1,19 @@
-#  Pagina hecha en React
+# Trabajo Final
 
-En el proyecto web se utilizo bootstrap para la realización de los componentes. La pagina se basa en un local de venta de bicicletas, esta en proceso de desarrollo.
+![](./public/screenshot.png)
 
-# git clone 
+##  Sobre la Pagina
 
-ejecute este comando en su editor de código y obtenga el codigo de la pagina.
+La pagina se basa en un local de venta de bicicletas, esta en proceso de desarrollo. Se implemento un Nabvar que redirige a las paginas mediante un "Link", con una seccion de productos, que traen datos creados en el mismo codigo. El apartado de Contacto se sigue trabajando. Para navegar por la pagina se utilizan componentes creados por React Router(Link /Routes). 
 
-# npm install
+### git clone 
 
-Debe realizar este comando para instalar todas las librerias utilizadas.
+Lo primero que se debe hacer es clona el repositorio para podes tener todos los archivos en tu PC. Ingresando git clone https://github.com/rmlobrero/tp_final.git
 
-# npm start
+### npm install
+
+Debe realizar este comando para instalar todas las librerias utilizadas. 
+
+### npm start
 
 Luego de hacer 'npm i', debe iniciar el programa usando npm start.
