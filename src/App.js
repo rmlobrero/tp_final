@@ -5,6 +5,8 @@ import "animate.css/animate.min.css";
 
 import Home from './routes/Home';
 import Contacto from './routes/Contacto'
+import NotFoundPage from './routes/NotFoundPage'
+
 
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
@@ -19,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path='/producto' element={<Cards />} />
           <Route path='/contacto' element={<Contacto />} />
+          <Route path='*' element={<NotFoundPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
