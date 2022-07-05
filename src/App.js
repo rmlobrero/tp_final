@@ -1,26 +1,26 @@
-import './App.css';
-import NavBar from './NavBar';
-import ProductsList from './ProductsList';
-import Footer from './Footer';
-import Banner from './Banner';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "animate.css/animate.min.css";
+
+import Home from './routes/Home';
+import Contacto from './routes/Contacto'
+
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import Cards from './components/Cards';
 
 function App() {
   return (
     <Container>
       <BrowserRouter>
-        <NavBar></NavBar>
+        <NavBar />
         <Routes>
-          <Route exact path='/' element={<Banner></Banner>} />
-          <Route exact path='/home' element={<Banner></Banner>} />
-
-          <Route exact path='/producto/all' element={<ProductsList></ProductsList>} />
-          <Route path='/producto/1' element={<ProductsList></ProductsList>} />
-          <Route path='/producto/2' element={<ProductsList></ProductsList>} />
+          <Route path="/" element={<Home />} />
+          <Route path='/producto' element={<Cards />} />
+          <Route path='/contacto' element={<Contacto />} />
         </Routes>
-        <Footer></Footer>
+        <Footer />
       </BrowserRouter>
     </Container>
   )

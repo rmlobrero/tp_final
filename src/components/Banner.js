@@ -1,7 +1,7 @@
 import "./Banner.css";
 import { Carousel } from 'react-bootstrap'
 
-function Banner() {
+export default function Banner() {
     return (
         <>
             <Carousel>
@@ -12,8 +12,8 @@ function Banner() {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Nuestras Bicicletas</h3>
+                        <p>Viaja con amigo y familia, disfruta cada momento</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -24,8 +24,8 @@ function Banner() {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Mountain Life</h3>
+                        <p>Vive experiencias inolvidables con bicicletas de la mejor calidad</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -36,8 +36,8 @@ function Banner() {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Bicicleta de Ruta</h3>
+                        <p>La mejores bicicletas para los largos viajes</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
@@ -45,4 +45,3 @@ function Banner() {
     );
 }
 
-export default Banner
